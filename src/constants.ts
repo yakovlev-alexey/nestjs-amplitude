@@ -1,0 +1,1 @@
+export const AMPLITUDE_OPTIONS = Symbol("AMPLITUDE_OPTIONS");

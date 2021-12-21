@@ -1,0 +1,58 @@
+{
+    "name": "nestjs-amplitude",
+    "version": "1.0.0",
+    "description": "Tiny Nest.js Amplitude client module",
+    "main": "dist/index.js",
+    "files": [
+        "dist/**"
+    ],
+    "author": "Alexey Yakovlev <alexeyyakovlev0359@gmail.com>",
+    "license": "MIT",
+    "private": false,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yakovlev-alexey/nestjs-ampltiude"
+    },
+    "scripts": {
+        "build": "tsc",
+        "clean": "rm -rf build",
+        "lint": "npm-run-all lint:*",
+        "lint:scripts": "eslint './**/*.{js,ts}'",
+        "format": "prettier --write './**/*.{js,ts}'",
+        "lint:types": "tsc --noEmit",
+        "prepublish": "yarn build",
+        "prepare": "husky install"
+    },
+    "keywords": [
+        "nestjs",
+        "amplitude",
+        "nodejs",
+        "analytics"
+    ],
+    "peerDependencies": {
+        "@apmlitude/node": ">=1.9.0",
+        "@nestjs/common": ">=7.0.0"
+    },
+    "devDependencies": {
+        "@amplitude/node": "^1.9.1",
+        "@amplitude/types": "^1.9.1",
+        "@commitlint/cli": "^13.1.0",
+        "@commitlint/config-conventional": "^13.1.0",
+        "@nestjs/common": "^8.0.6",
+        "@typescript-eslint/eslint-plugin": "^4.29.3",
+        "@typescript-eslint/parser": "^4.29.3",
+        "eslint": "^7.32.0",
+        "eslint-plugin-prettier": "^3.4.1",
+        "husky": "^7.0.2",
+        "lint-staged": "^11.1.2",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^2.3.2",
+        "typescript": "^4.3.5"
+    },
+    "lint-staged": {
+        "**/*.{js,jsx,ts,tsx}": [
+            "prettier --write --loglevel warn './**/*.{js,ts}'",
+            "eslint --fix './**/*.{js,ts}'"
+        ]
+    }
+}
