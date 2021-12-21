@@ -11,7 +11,7 @@
     "private": false,
     "repository": {
         "type": "git",
-        "url": "https://github.com/yakovlev-alexey/nestjs-ampltiude"
+        "url": "https://github.com/yakovlev-alexey/nestjs-amplitude"
     },
     "scripts": {
         "build": "tsc",
