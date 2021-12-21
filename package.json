@@ -1,6 +1,6 @@
 {
     "name": "nestjs-amplitude",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Tiny Nest.js Amplitude client module",
     "main": "dist/index.js",
     "files": [
