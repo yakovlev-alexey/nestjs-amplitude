@@ -32,7 +32,7 @@
         "analytics"
     ],
     "peerDependencies": {
-        "@apmlitude/node": ">=1.9.0",
+        "@amplitude/node": ">=1.9.0",
         "@nestjs/common": ">=7.0.0"
     },
     "devDependencies": {
